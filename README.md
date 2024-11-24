@@ -25,7 +25,7 @@
 ## Структура проекта
 
 ```
-magazin_app/
+ваша_папка/
 │
 ├── main.py
 ├── auth.py
@@ -58,7 +58,7 @@ magazin_app/
 1. Клонируйте репозиторий:
     ```bash
     git clone https://github.com/WETQV/Warehouse-store.git
-    cd magazin_app
+    cd ваша_папка
     ```
 
 2. Создайте виртуальное окружение:
