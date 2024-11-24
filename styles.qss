@@ -1,0 +1,180 @@
+/* Общие стили для всех виджетов */
+QWidget {
+    font-size: 14px;
+    background-color: #242424;  /* Темный фон для всех элементов */
+    color: white;               /* Белый текст */
+    font-family: "Segoe UI", "Roboto", sans-serif; /* Улучшенный шрифт */
+}
+
+/* Кнопки */
+QPushButton {
+    padding: 8px 16px;
+    background-color: #242424;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #363636;  /* Тонкая рамка для кнопок */
+}
+
+QPushButton:hover {
+    background-color: #363636;  /* При наведении цвет кнопки становится светлее */
+    border-color: #4a4a4a;      /* Цвет рамки тоже немного осветляется */
+}
+
+QPushButton:pressed {
+    background-color: #4a4a4a;  /* При нажатии кнопка становится еще светлее */
+    border-color: #5e5e5e;
+}
+
+/* Стиль для полей ввода */
+QLineEdit {
+    padding: 5px;
+    border: 1px solid #363636;  /* Темная рамка */
+    border-radius: 5px;
+    background-color: #363636;  /* Темный фон для полей ввода */
+    color: white;               /* Белый текст в полях ввода */
+}
+
+QLineEdit:focus {
+    border: 1px solid #4a90e2;  /* Цвет рамки при фокусе */
+    background-color: #3a3a3a;
+}
+
+/* Стиль для меток */
+QLabel {
+    padding: 5px;
+    color: white;               /* Белый текст */
+    font-weight: normal;
+}
+
+/* Стиль для таблиц */
+QTableWidget {
+    gridline-color: #363636;    /* Темная сетка для таблицы */
+    background-color: #242424;  /* Темный фон для таблицы */
+    color: white;               /* Белый текст в таблице */
+    border: 1px solid #363636;
+}
+
+QTableView {
+    gridline-color: #363636;
+    background-color: #242424;
+    color: white;
+    selection-background-color: #555555; /* Более темный цвет выделения */
+    selection-color: white;
+}
+
+QTableView::item:selected {
+    background-color: #555555; /* Совпадает с selection-background-color */
+}
+
+/* Стиль для заголовков таблицы */
+QHeaderView::section {
+    background-color: #363636;  /* Темный фон для заголовков таблицы */
+    padding: 4px;
+    border: 1px solid #242424;  /* Темная граница для заголовков */
+    font-weight: bold;
+}
+
+/* Стиль для бокового меню */
+QWidget#sideMenu {
+    background-color: #242424;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton#menuButton {
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    border: none;
+    font-weight: normal;
+}
+
+QPushButton#menuButton:hover {
+    background-color: #363636;
+}
+
+/* Стиль для основного окна */
+QStackedWidget {
+    background-color: #363636;  /* Темный фон для основного окна */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Дополнительные стили */
+
+/* Скроллбары */
+QScrollBar:vertical {
+    background: #242424;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4a4a4a;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5e5e5e;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: #242424;
+    height: 0px;
+}
+
+/* Таблицы */
+QTableView {
+    gridline-color: #363636;
+    background-color: #242424;
+    color: white;
+    selection-background-color: #555555; /* Более темный цвет выделения */
+    selection-color: white;
+}
+
+QTableView::item:selected {
+    background-color: #555555;
+}
+
+/* Меню */
+QMenuBar {
+    background-color: #242424;
+    color: white;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #363636;
+}
+
+QMenu {
+    background-color: #242424;
+    color: white;
+    border: 1px solid #363636;
+}
+
+QMenu::item:selected {
+    background-color: #363636;
+}
+
+/* Диалоги */
+QDialog {
+    background-color: #242424;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Тултипы */
+QToolTip {
+    background-color: #363636;
+    color: white;
+    border: 1px solid #4a4a4a;
+    padding: 5px;
+    border-radius: 4px;
+}
